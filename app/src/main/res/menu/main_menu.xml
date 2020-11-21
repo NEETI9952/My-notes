@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/add"
+        android:title="Add Note"
+        android:icon="@drawable/ic_baseline_add_24"
+        app:showAsAction="ifRoom"/>
+<!--    <item android:title="Settings"-->
+<!--        android:id="@+id/settings"-->
+<!--        android:icon="@drawable/ic_baseline_settings_24"-->
+<!--        app:showAsAction="never"/>-->
+    <item android:title="Sort"
+        android:id="@+id/sort"
+        android:icon="@drawable/ic_baseline_settings_24"
+        app:showAsAction="never">
+        <menu>
+            <item android:title="Priority"
+                android:id="@+id/priority"
+                app:showAsAction="never"/>
+            <item android:title="Date"
+                android:id="@+id/date"
+                app:showAsAction="never"/>
+            <item android:title="Title"
+                android:id="@+id/title"
+                app:showAsAction="never"/>
+        </menu>
+    </item>
+
+    <item android:title="Help"
+        android:id="@+id/help"
+        android:icon="@drawable/ic_baseline_help_24"
+        app:showAsAction="never"/>
+    <item android:title="Log out"
+        android:id="@+id/logOut"
+        app:showAsAction="never"/>
+
+</menu>
